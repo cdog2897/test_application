@@ -29,7 +29,7 @@ public class CreateController {
 
     @PostMapping("/create")
     public String submitForm(Song song) {
-        logger.info("Post to /create");
+        logger.info("Post to /create ");
         service.createSong(song);
         return "success";
     }
